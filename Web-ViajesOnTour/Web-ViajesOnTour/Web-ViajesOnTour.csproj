@@ -66,6 +66,37 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Index\dev-tools\package.json" />
+    <Content Include="Index\HTML\index.aspx" />
+    <Content Include="Index\HTML\sass\base\_base.scss" />
+    <Content Include="Index\HTML\sass\components\_accordion.scss" />
+    <Content Include="Index\HTML\sass\components\_button.scss" />
+    <Content Include="Index\HTML\sass\gui\_pricing.scss" />
+    <Content Include="Index\HTML\sass\gui\_service.scss" />
+    <Content Include="Index\HTML\sass\gui\_work.scss" />
+    <Content Include="Index\HTML\sass\layout.scss" />
+    <Content Include="Index\HTML\sass\layout\_footer.scss" />
+    <Content Include="Index\HTML\sass\layout\_header.scss" />
+    <Content Include="Index\HTML\sass\pages\_contact.scss" />
+    <Content Include="Index\HTML\sass\plugins\_back-to-top.scss" />
+    <Content Include="Index\HTML\sass\plugins\_bootstrap-components.scss" />
+    <Content Include="Index\HTML\sass\plugins\_swiper.scss" />
+    <Content Include="Index\HTML\sass\utils\_colors.scss" />
+    <Content Include="Index\HTML\sass\utils\_helpers.scss" />
+    <Content Include="Index\HTML\sass\_mixins.scss" />
+    <Content Include="Index\HTML\sass\_variables.scss" />
+    <Content Include="Index\HTML\vendor\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Index\HTML\vendor\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="Index\HTML\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Index\HTML\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Index\HTML\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Index\HTML\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Index\HTML\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Index\HTML\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Index\HTML\vendor\jquery.min.map" />
+    <Content Include="Index\HTML\vendor\simple-line-icons\fonts\Simple-Line-Icons.eot" />
+    <Content Include="Index\HTML\vendor\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="Index\HTML\vendor\simple-line-icons\fonts\Simple-Line-Icons.woff" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -75,14 +106,96 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Inicio\css\style.css" />
-    <Content Include="Inicio\index.html" />
-    <Content Include="Inicio\js\index.js" />
-    <Content Include="Inicio\license.txt" />
-    <Content Include="Inicio\README.txt" />
+    <Content Include="Index\dev-tools\gulpfile.js" />
+    <Content Include="Index\dev-tools\index.js" />
+    <Content Include="Index\HTML\css\animate.css" />
+    <Content Include="Index\HTML\css\layout-rtl.css" />
+    <Content Include="Index\HTML\css\layout-rtl.min.css" />
+    <Content Include="Index\HTML\css\layout.css" />
+    <Content Include="Index\HTML\css\layout.min.css" />
+    <Content Include="Index\HTML\img\1920x1080\01.jpg" />
+    <Content Include="Index\HTML\img\1920x1080\02.jpg" />
+    <Content Include="Index\HTML\img\397x300\01.jpg" />
+    <Content Include="Index\HTML\img\397x300\02.jpg" />
+    <Content Include="Index\HTML\img\397x300\03.jpg" />
+    <Content Include="Index\HTML\img\397x415\01.jpg" />
+    <Content Include="Index\HTML\img\500x500\01.jpg" />
+    <Content Include="Index\HTML\img\500x500\02.jpg" />
+    <Content Include="Index\HTML\img\500x500\03.jpg" />
+    <Content Include="Index\HTML\img\800x400\01.jpg" />
+    <Content Include="Index\HTML\img\970x647\01.jpg" />
+    <Content Include="Index\HTML\img\970x647\02.jpg" />
+    <Content Include="Index\HTML\img\970x647\03.jpg" />
+    <Content Include="Index\HTML\img\clients\01.png" />
+    <Content Include="Index\HTML\img\clients\02.png" />
+    <Content Include="Index\HTML\img\clients\03.png" />
+    <Content Include="Index\HTML\img\clients\04.png" />
+    <Content Include="Index\HTML\img\clients\05.png" />
+    <Content Include="Index\HTML\img\clients\06.png" />
+    <Content Include="Index\HTML\img\logo-dark.png" />
+    <Content Include="Index\HTML\img\logo.png" />
+    <Content Include="Index\HTML\img\widgets\gmap-pin.png" />
+    <Content Include="Index\HTML\js\components\google-map.js" />
+    <Content Include="Index\HTML\js\components\google-map.min.js" />
+    <Content Include="Index\HTML\js\components\masonry.js" />
+    <Content Include="Index\HTML\js\components\masonry.min.js" />
+    <Content Include="Index\HTML\js\components\swiper.js" />
+    <Content Include="Index\HTML\js\components\swiper.min.js" />
+    <Content Include="Index\HTML\js\components\wow.js" />
+    <Content Include="Index\HTML\js\components\wow.min.js" />
+    <Content Include="Index\HTML\js\layout.js" />
+    <Content Include="Index\HTML\js\layout.min.js" />
+    <Content Include="Index\HTML\vendor\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Index\HTML\vendor\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Index\HTML\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Index\HTML\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Index\HTML\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Index\HTML\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Index\HTML\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Index\HTML\vendor\bootstrap\js\npm.js" />
+    <Content Include="Index\HTML\vendor\jquery-migrate.min.js" />
+    <Content Include="Index\HTML\vendor\jquery.back-to-top.js" />
+    <Content Include="Index\HTML\vendor\jquery.easing.js" />
+    <Content Include="Index\HTML\vendor\jquery.min.js" />
+    <Content Include="Index\HTML\vendor\jquery.smooth-scroll.js" />
+    <Content Include="Index\HTML\vendor\jquery.wow.min.js" />
+    <Content Include="Index\HTML\vendor\masonry\imagesloaded.pkgd.min.js" />
+    <Content Include="Index\HTML\vendor\masonry\jquery.masonry.pkgd.min.js" />
+    <Content Include="Index\HTML\vendor\simple-line-icons\fonts\Simple-Line-Icons.dev.svg" />
+    <Content Include="Index\HTML\vendor\simple-line-icons\fonts\Simple-Line-Icons.svg" />
+    <Content Include="Index\HTML\vendor\simple-line-icons\icons-lte-ie7.js" />
+    <Content Include="Index\HTML\vendor\simple-line-icons\License.txt" />
+    <Content Include="Index\HTML\vendor\simple-line-icons\Readme.txt" />
+    <Content Include="Index\HTML\vendor\simple-line-icons\simple-line-icons.css" />
+    <Content Include="Index\HTML\vendor\simple-line-icons\simple-line-icons.min.css" />
+    <Content Include="Index\HTML\vendor\swiper\css\swiper.css" />
+    <Content Include="Index\HTML\vendor\swiper\css\swiper.min.css" />
+    <Content Include="Index\HTML\vendor\swiper\js\swiper.jquery.js" />
+    <Content Include="Index\HTML\vendor\swiper\js\swiper.jquery.min.js" />
+    <Content Include="Index\HTML\vendor\swiper\js\swiper.js" />
+    <Content Include="Index\HTML\vendor\swiper\js\swiper.min.js" />
+    <Content Include="Login\css\style.css" />
+    <Content Include="Login\js\index.js" />
+    <Content Include="Login\license.txt" />
+    <Content Include="Login\Login.aspx" />
+    <Content Include="Login\README.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Index\HTML\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index\HTML\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
