@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Web_ViajesOnTour.Login.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login_cliente.aspx.cs" Inherits="Web_ViajesOnTour.Login.Login_cliente" %>
 
 <!DOCTYPE html>
 <html >
@@ -78,10 +78,14 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 <body>
   <div class="login">
 	<h1>Login</h1>
-    <form method="post">
-    	<input type="text" name="u" placeholder="Username" required="required" />
-        <input type="password" name="p" placeholder="Password" required="required" />
-        <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+    <form method="post" runat="server">
+        <p>
+            <asp:Label ID="lbl_si" runat="server"></asp:Label>
+        </p>
+        <asp:TextBox ID="txt_user" placeholder="Usuario" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txt_pass" placeholder="Contraseña" runat="server"></asp:TextBox>
+        <asp:Button ID="btn_login" class="btn btn-primary btn-block btn-large" runat="server" Text="Ingresar" OnClick="btn_login_Click" />
+     
     </form>
 </div>
   
@@ -89,3 +93,4 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 
 </body>
 </html>
+

@@ -1,22 +1,12 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Web_ViajesOnTour.Index.HTML.index" %>
 
 <!DOCTYPE html>
-<!-- ==============================
-    Project:        Metronic "Aitonepage" Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
-    Version:        1.0
-    Author:         KeenThemes
-    Primary use:    Corporate, Business Themes.
-    Email:          support@keenthemes.com
-    Follow:         http://www.twitter.com/keenthemes
-    Like:           http://www.facebook.com/keenthemes
-    Website:        http://www.keenthemes.com
-    Premium:        Premium Metronic Admin Theme: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-================================== -->
 <html lang="en" class="no-js">
     <!-- BEGIN HEAD -->
     <head>
+        <link rel="shortcut icon" href="../167728.png" />
         <meta charset="utf-8"/>
-        <title>Metronic "Aitonepage" Frontend Freebie</title>
+        <title>ViajesOnTour</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta content="" name="description"/>
@@ -74,7 +64,7 @@
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#pricing">Pricing</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Work</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#service">Service</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="../../Login/login.aspx">Login</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="../../Login/login_cliente.aspx">Login</a></li>
                             </ul>
                         </div>
                     </div>
