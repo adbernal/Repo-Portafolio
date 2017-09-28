@@ -120,15 +120,16 @@
     <Content Include="Index\HTML\vendor\simple-line-icons\fonts\Simple-Line-Icons.eot" />
     <Content Include="Index\HTML\vendor\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
     <Content Include="Index\HTML\vendor\simple-line-icons\fonts\Simple-Line-Icons.woff" />
-    <EntityDeploy Include="Model.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Login\Login_cliente.aspx" />
-    <Content Include="Model.edmx.diagram">
-      <DependentUpon>Model.edmx</DependentUpon>
-    </Content>
+    <Content Include="Login\Login_apoderado.aspx" />
     <None Include="packages.config" />
+    <Content Include="Login\Login_encargado.aspx" />
+    <Content Include="Sesion\assets\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Sesion\assets\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Sesion\assets\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Sesion\assets\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Sesion\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Sesion\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Sesion\assets\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -209,16 +210,52 @@
     <Content Include="Login\js\index.js" />
     <Content Include="Login\license.txt" />
     <Content Include="Login\README.txt" />
-    <Content Include="Model.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model.edmx</DependentUpon>
-      <LastGenOutput>Model.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Model.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model.edmx</DependentUpon>
-      <LastGenOutput>Model.cs</LastGenOutput>
-    </Content>
+    <Content Include="Sesion\assets\css\main-style.css" />
+    <Content Include="Sesion\assets\css\style.css" />
+    <Content Include="Sesion\assets\font-awesome\css\font-awesome.css" />
+    <Content Include="Sesion\assets\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Sesion\assets\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Sesion\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Sesion\assets\img\logo.png" />
+    <Content Include="Sesion\assets\img\user.jpg" />
+    <Content Include="Sesion\assets\plugins\bootstrap\bootstrap.css" />
+    <Content Include="Sesion\assets\plugins\bootstrap\bootstrap.js" />
+    <Content Include="Sesion\assets\plugins\bootstrap\bootstrap.min.js" />
+    <Content Include="Sesion\assets\plugins\dataTables\dataTables.bootstrap.css" />
+    <Content Include="Sesion\assets\plugins\dataTables\dataTables.bootstrap.js" />
+    <Content Include="Sesion\assets\plugins\dataTables\jquery.dataTables.js" />
+    <Content Include="Sesion\assets\plugins\flot\excanvas.min.js" />
+    <Content Include="Sesion\assets\plugins\flot\jquery.flot.js" />
+    <Content Include="Sesion\assets\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="Sesion\assets\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="Sesion\assets\plugins\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="Sesion\assets\plugins\jquery-1.10.2.js" />
+    <Content Include="Sesion\assets\plugins\metisMenu\jquery.metisMenu.js" />
+    <Content Include="Sesion\assets\plugins\morris\morris-0.4.3.min.css" />
+    <Content Include="Sesion\assets\plugins\morris\morris.js" />
+    <Content Include="Sesion\assets\plugins\morris\raphael-2.1.0.min.js" />
+    <Content Include="Sesion\assets\plugins\pace\pace-theme-big-counter.css" />
+    <Content Include="Sesion\assets\plugins\pace\pace.js" />
+    <Content Include="Sesion\assets\plugins\social-buttons\social-buttons.css" />
+    <Content Include="Sesion\assets\plugins\timeline\timeline.css" />
+    <Content Include="Sesion\assets\scripts\dashboard-demo.js" />
+    <Content Include="Sesion\assets\scripts\flot-demo.js" />
+    <Content Include="Sesion\assets\scripts\morris-demo.js" />
+    <Content Include="Sesion\assets\scripts\siminta.js" />
+    <Content Include="Sesion\blank.html" />
+    <Content Include="Sesion\buttons.html" />
+    <Content Include="Sesion\flot.html" />
+    <Content Include="Sesion\forms.html" />
+    <Content Include="Sesion\grid.html" />
+    <Content Include="Sesion\index.html" />
+    <Content Include="Sesion\login.html" />
+    <Content Include="Sesion\morris.html" />
+    <Content Include="Sesion\notifications.html" />
+    <Content Include="Sesion\panels-wells.html" />
+    <Content Include="Sesion\portal.aspx" />
+    <Content Include="Sesion\tables.html" />
+    <Content Include="Sesion\timeline.html" />
+    <Content Include="Sesion\typography.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -232,33 +269,31 @@
     <Compile Include="Index\HTML\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login\Login_cliente.aspx.cs">
-      <DependentUpon>Login_cliente.aspx</DependentUpon>
+    <Compile Include="Login\Login_apoderado.aspx.cs">
+      <DependentUpon>Login_apoderado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login\Login_cliente.aspx.designer.cs">
-      <DependentUpon>Login_cliente.aspx</DependentUpon>
+    <Compile Include="Login\Login_apoderado.aspx.designer.cs">
+      <DependentUpon>Login_apoderado.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Model.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model.Context.tt</DependentUpon>
+    <Compile Include="Login\Login_encargado.aspx.cs">
+      <DependentUpon>Login_encargado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Model.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model.edmx</DependentUpon>
+    <Compile Include="Login\Login_encargado.aspx.designer.cs">
+      <DependentUpon>Login_encargado.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sesion\portal.aspx.cs">
+      <DependentUpon>portal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sesion\portal.aspx.designer.cs">
+      <DependentUpon>portal.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\" />
-    <Folder Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\" />
+    <Folder Include="WebServices\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

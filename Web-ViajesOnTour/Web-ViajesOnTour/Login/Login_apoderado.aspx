@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login_cliente.aspx.cs" Inherits="Web_ViajesOnTour.Login.Login_cliente" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login_apoderado.aspx.cs" Inherits="Web_ViajesOnTour.Login.Login_cliente" %>
 
 <!DOCTYPE html>
 <html >

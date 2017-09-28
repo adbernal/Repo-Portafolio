@@ -64,7 +64,7 @@
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#pricing">Pricing</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Work</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#service">Service</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="../../Login/login_cliente.aspx">Login</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="../../Login/login_apoderado.aspx">Login</a></li>
                             </ul>
                         </div>
                     </div>

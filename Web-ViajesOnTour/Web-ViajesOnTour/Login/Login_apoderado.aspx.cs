@@ -10,18 +10,25 @@ using System.Data;
 
 
 
+
 namespace Web_ViajesOnTour.Login
 {
     public partial class Login_cliente : System.Web.UI.Page
     {
+
+
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
         }
+        
+
 
         protected void btn_login_Click(object sender, EventArgs e)
         {
-           
             string oradb = "DATA SOURCE=localhost:1521/xe;USER ID=ADOLFO ; Password= 123";
 
             OracleConnection conn = new OracleConnection(oradb); // C#
@@ -29,23 +36,34 @@ namespace Web_ViajesOnTour.Login
             conn.Open();
             DataSet ds = new DataSet();
             OracleCommand cmd = new OracleCommand();
-            cmd = new OracleCommand("SELECT * FROM Usuarios where usuario=:user_u and pass=:pass_u", conn);
+
+            cmd = new OracleCommand("SELECT rut,pass,nombre FROM APODERADOS where rut=:user_u and pass=:pass_u", conn);
             cmd.Parameters.Add(new OracleParameter(":user_u", txt_user.Text));
             cmd.Parameters.Add(new OracleParameter(":pass_u", txt_pass.Text));
+            
 
             OracleDataAdapter da = new OracleDataAdapter(cmd);
             da.Fill(ds);
             int i = ds.Tables[0].Rows.Count;
+
             if (i == 1)
             {
-                lbl_si.Text = "SIIII";
+
+                Session["rut"] = txt_user.Text;
+                
+                Response.Redirect("../Sesion/portal.aspx");
+                Session.RemoveAll();
+
+               
+
+                
             }
-            else
+            else 
             {
                 lbl_si.Text = "NOOOOO";
             }
+            
         }
-
     }
 }
     
