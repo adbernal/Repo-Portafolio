@@ -60,7 +60,7 @@ namespace Web_ViajesOnTour.Login
             }
             else 
             {
-                lbl_si.Text = "NOOOOO";
+                lbl_si.Text = "NOOOOO2";
             }
             
         }
